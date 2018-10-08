@@ -27,9 +27,9 @@ client.on("ready", function() {
 	console.log("ready");
 	
 	client.user.setStatus("Online");
-	client.user.setGame("Mplay | Misk...");
+	client.user.setGame("4play | Reve");
 });
-const prefix = "M"
+const prefix = "4"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
     if (!msg.content.startsWith(prefix)) return undefined;
@@ -320,8 +320,8 @@ function play(guild, song) {
 })
 }
 });
-const developers = ["331975722283302912","399164491201249282","346810648161943552"]
-const adminprefix = "M";
+const developers = ["331975722283302912","399164491201249282","335442086645989376"]
+const adminprefix = "4";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
